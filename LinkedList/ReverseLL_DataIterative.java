@@ -177,17 +177,29 @@ public class ReverseLL_DataIterative {
 	      }
 	    }
 
+	    private Node getNodeAt(int idx) {
+		      Node temp = head;
+		      for (int i = 0; i < idx; i++) {
+		        temp = temp.next;
+		      }
+		      return temp;
+		}
+	    
 	    public void reverseDI() {
-	         Node prev = null;
+	         int li = 0;
+	         int ri = size - 1;
 	         
-	         while ( head != null ) {
-	        	 Node newnode = head.next;
-	        	 head.next = prev;
-	        	 prev = head;
-	        	 head = newnode;
+	         while (li < ri) {
+	        	 Node left = getNodeAt(li);
+	        	 Node right = getNodeAt(ri);
+	        	 
+	        	 int temp = left.data;
+	        	 left.data = right.data;
+	        	 right.data = temp;
+	        	 
+	        	 li++;
+	        	 ri--;
 	         }
-	         
-	         head = prev;
 	    }
 	  }
 

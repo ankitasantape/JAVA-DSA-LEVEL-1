@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="A1. Basics Of Programming/A3. Function And Arrays"/>
+	<classpathentry kind="src" path="A1. Basics Of Programming/A4. 2D Arrays"/>
+	<classpathentry kind="src" path="A1. Basics Of Programming/A5. String, String Builder and ArrayList"/>
+	<classpathentry kind="src" path="A2. Recursion And Backtracking/A1. Introduction to Recursion"/>
+	<classpathentry kind="src" path="A2. Recursion And Backtracking/A2. Recursion in Arrays"/>
+	<classpathentry kind="src" path="A2. Recursion And Backtracking/A3. Recursion with ArrayList"/>
+	<classpathentry kind="src" path="A2. Recursion And Backtracking/A4. Recursion on the way up"/>
+	<classpathentry kind="src" path="A2. Recursion And Backtracking/A5. Recursion Backtracking"/>
+	<classpathentry kind="src" path="A3. Dynamic Programming/A1. Dynamic Programming and Greedy"/>
+	<classpathentry kind="src" path="A3. Dynamic Programming/A2. Time and Space Complexity"/>
+	<classpathentry kind="src" path="A4. OOPs/A1. empty"/>
+	<classpathentry kind="src" path="A5. Basic Data Structures/A1. Stack and Queue"/>
+	<classpathentry kind="src" path="A5. Basic Data Structures/A2. Linked List"/>
+	<classpathentry kind="src" path="A5. Basic Data Structures/A3. Generic Tree"/>
+	<classpathentry kind="src" path="A5. Basic Data Structures/A4. Binary Tree"/>
+	<classpathentry kind="src" path="A5. Basic Data Structures/A5. Binary Search Tree"/>
+	<classpathentry kind="src" path="A6. Advanced Data Structure/A1. Hashmap and Heap"/>
+	<classpathentry kind="src" path="A6. Advanced Data Structure/A2. Graphs"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

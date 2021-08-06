@@ -67,4 +67,20 @@ public class All_Indices_Of_Array {
 	           return ans;
 	       }
 	    }
+	
+	  public static int[] allIndices2(int[] arr, int x, int idx, int fsf) {
+               if(idx == arr.length){
+                  return new int[fsf];
+               } 
+        
+               if(arr[idx] == x){
+                    fsf++; 
+               }
+               int ans[] =  allIndices(arr, x, idx + 1, fsf);
+        
+               if(arr[idx] == x){
+                    ans[fsf - 1] = idx;
+               }
+                return ans;
+         }
 }

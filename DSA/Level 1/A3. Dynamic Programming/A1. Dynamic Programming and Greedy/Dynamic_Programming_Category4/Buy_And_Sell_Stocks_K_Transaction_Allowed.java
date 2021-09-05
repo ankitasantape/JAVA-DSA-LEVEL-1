@@ -52,8 +52,27 @@ public class Buy_And_Sell_Stocks_K_Transaction_Allowed {
 		}
 		int k = sc.nextInt();
 		System.out.println(buy_and_sell_K_transaction(n, arr, k));
+		System.out.println(k_transactions_Allowed_2(n, arr, k));
+		System.out.println(k_transactions_Allowed_Optimized(n, arr, k));
 		sc.close();
 	}
+//	Time complexity - O(n*k)
+	private static int k_transactions_Allowed_Optimized(int n, int[] arr, int k) {
+        int dp[][] = new int[k+1][n];
+        for (int t = 1; t <= k; t++){
+            int max = Integer.MIN_VALUE;
+            for(int d = 1; d < n; d++){
+                
+                max = Math.max( max, dp[t-1][d-1] - arr[d-1]);
+                
+                dp[t][d] = Math.max( dp[t][d-1] , max + arr[d] );
+                
+            }
+        }
+        
+        return dp[k][n-1];
+  }
+	
 //      Time Complexity - O(n^2*k)
 	private static int buy_and_sell_K_transaction(int n, int[] arr, int k) {
 		
@@ -70,13 +89,21 @@ public class Buy_And_Sell_Stocks_K_Transaction_Allowed {
 				dp[i][j] = max;
 			}
 		}
-//		for(int i = 0; i < dp.length; i++) {
-//			for(int j = 0; j < dp[0].length; j++) {
-//				System.out.print(dp[i][j] + " ");
-//			}
-//			System.out.println();
-//		}
-		
 		return dp[k][n-1];
 	}
+//  Time Complexity - O(n^2*k)
+	private static int k_transactions_Allowed_2(int n, int[] arr, int k) {
+        int dp[][] = new int[k+1][n];
+        for (int t = 1; t <= k; t++){
+            for(int d = 1; d < n; d++){
+                int max = dp[t][d - 1];
+                for(int c = 0; c < d; c++){
+                    max = Math.max(max, dp[t-1][c] + arr[d] - arr[c]);
+                }
+                dp[t][d] = max;
+            }
+        }
+        
+        return dp[k][n-1];
+  }
 }

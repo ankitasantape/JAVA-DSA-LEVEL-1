@@ -117,7 +117,7 @@ public class A01_Size_Sum_Max_Min_Find_In_BST {
 		int sum = sum(node.left) + sum(node.right);
 		return sum + node.data;
 	}
-
+// ***************************************************
 	public static int max(Node node) {
 		if (node == null) {
 			return Integer.MIN_VALUE;
@@ -135,7 +135,24 @@ public class A01_Size_Sum_Max_Min_Find_In_BST {
 		min = Math.min(node.data, min);
 		return min;
 	}
-
+// ****************Optimized Code*********************
+	public static int max(Node node) {
+             if(node.right == null){
+                return node.data;
+             }
+             else {
+                 return max(node.right);
+             }
+        }
+        public static int min(Node node) {
+             if(node.left == null){
+                 return node.data;
+             }
+             else {
+                 return min(node.left);
+             }
+        }
+// ****************************************************
 	public static boolean find(Node node, int data) {
 		if (node == null) {
 			return false;

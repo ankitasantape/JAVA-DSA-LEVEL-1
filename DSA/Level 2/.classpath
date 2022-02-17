@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="1. Conceptual Building Blocks/A1. Recursion And Backtracking"/>
+	<classpathentry kind="src" path="1. Conceptual Building Blocks/A2. Bit Manipulation"/>
+	<classpathentry kind="src" path="1. Conceptual Building Blocks/A3. Dynamic Programming"/>
+	<classpathentry kind="src" path="2. Data Structures/A1. Graphs"/>
+	<classpathentry kind="src" path="2. Data Structures/A2. Hashmap And Heaps"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

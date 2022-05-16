@@ -81,6 +81,7 @@ public class Merge_Overlapping_Interval {
         mergeOverlappingIntervals(arr);
     }
 
+//     Time Complexity : O(n log n)	
     public static void mergeOverlappingIntervals(int[][] arr) {
         // merge overlapping intervals and print in increasing order of start time
         Pair[] pairs = new Pair[arr.length];

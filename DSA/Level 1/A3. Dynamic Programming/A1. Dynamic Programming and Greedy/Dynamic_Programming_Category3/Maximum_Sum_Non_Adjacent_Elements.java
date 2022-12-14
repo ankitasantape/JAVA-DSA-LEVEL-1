@@ -22,7 +22,11 @@ Sample Input
 	5
 	6
 Sample Output
-116	
+116
+
+
+### This code executes the test cases of "House Robber" in Leetcode. So can use this code for "House Robber"
+
 */	
 public class Maximum_Sum_Non_Adjacent_Elements {
    

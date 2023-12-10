@@ -44,5 +44,17 @@ public class Power_Logarithmic {
 	    return xn;
 	  }
 
+	public static int power(int a , int b , int m){
+            int x =a;
+            int ans =1;
+            while(b!=0){
+               if(b%2 == 1){
+                 ans = (ans *x) %m ;
+               }
+               x = (x*x)%m;
+               b/=2;
+           }
+           return ans;
+       }
 
 }
